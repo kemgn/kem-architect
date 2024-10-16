@@ -1,0 +1,78 @@
+.accordion {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.accordionLabel {
+    padding: 8px 15px;
+}
+
+.accordionLabel {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--mui-palette-background-paper);
+    color: var(--mui-palette-primary-main);
+    border-radius: 8px;
+}
+
+.iconContainer {
+    /* margin-right: 8px;  */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.accordionLabel:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.accordionContent {
+    background-color: var(--mui-palette-background-paper);
+    font-size: 0.85em;
+    padding: 12px;
+    display: block;
+}
+
+.accordionInput {
+    display: none;
+}
+
+.accordionInput:checked~.accordionContent {
+    display: none;
+}
+
+.arrowUpIcon,
+.arrowDownIcon {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.accordionTitleContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.accordionInput:checked~.accordionLabel .arrowUpIcon {
+    display: block;
+}
+
+.accordionInput:checked~.accordionLabel .arrowDownIcon {
+    display: none;
+}
+
+.accordionInput:not(:checked)~.accordionLabel .arrowDownIcon {
+    display: block;
+}
+
+.accordionInput:not(:checked)~.accordionLabel .arrowUpIcon {
+    display: none;
+}

@@ -1,0 +1,65 @@
+.conditionalcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.viewbarTableContainer {
+    width: 30vh;
+    margin-top: 3%;
+    height: 70vh;
+    box-shadow: '0px 2px 3px 1px rgba(0,0,0,0.5)';
+    text-align: center;
+}
+
+.createbtn {
+    margin-top: 15px;
+    width: 80%;
+}
+
+.viewbartable {
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.conditionCard {
+    border: 2px solid gray;
+    padding: 10%;
+    width: 40vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.viewEnv {
+    border: 2px solid lightblue;
+    padding: 10%;
+    width: 40vh;
+    height: 50vh;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.actionCreate {
+    border: 2px solid orange;
+    padding: 10%;
+    margin-left: 10%;
+    width: 40vh;
+    height: 20vh;
+    text-align: center;
+}
+
+.newtargetCreate {
+    border: 2px solid red;
+    padding: 10%;
+    margin-left: 10%;
+    width: 40vh;
+    height: 50vh;
+    margin-top: 10%;
+    text-align: center;
+}

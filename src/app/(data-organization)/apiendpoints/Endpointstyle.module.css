@@ -1,0 +1,12 @@
+.actionButton{
+    height: 32px;
+}
+
+.lastActionButton{
+    height: 32px;
+    margin-right: 69px;
+}
+
+.headerAndActions {
+    margin-top: 5.1%;
+}

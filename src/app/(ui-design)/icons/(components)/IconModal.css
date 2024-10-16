@@ -1,0 +1,7 @@
+.imgdynamic{
+    max-width: 240px;
+    max-height: 240px;
+    position: relative;
+    left: 50% ;
+    transform: translateX(-50%);
+}

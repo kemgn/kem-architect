@@ -1,0 +1,18 @@
+.titlewithlines {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.titlewithlines hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.datePicker {
+    margin: 10px 10px 0 0;
+    width: 100%;
+}

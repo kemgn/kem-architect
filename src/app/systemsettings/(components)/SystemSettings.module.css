@@ -1,0 +1,22 @@
+.titlewithlines {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.titlewithlines hr {
+    flex-grow: 1;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.period {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+

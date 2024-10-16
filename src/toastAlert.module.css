@@ -1,0 +1,22 @@
+.alertContainer {
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 16px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.alertTitle {
+    width: 100%;
+    font-size: 1.5rem;
+    /* text-align: center; */
+}
+/* 
+.snackbar{
+    width: 256px;
+}
+
+.closeIcon{
+    cursor: pointer;
+} */

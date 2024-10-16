@@ -1,0 +1,36 @@
+{
+  "name": "ims-architect",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev ",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prod": "next build && next start"
+  },
+  "dependencies": {
+    "@ims/component-library": "^0.0.206",
+    "@ims/ide": "^0.0.27",
+    "@mui/material-nextjs": "^5.15.11",
+    "@mui/x-date-pickers": "^7.9.0",
+    "dayjs": "^1.11.13",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "next": "^14.2.3",
+    "npm": "^10.7.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "swr": "^2.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "cross-env": "^7.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.1",
+    "sass": "^1.76.0",
+    "typescript": "^5"
+  }
+}

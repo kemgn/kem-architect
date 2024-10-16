@@ -1,0 +1,44 @@
+.sideMenuContainer {
+    width: 270px;
+    height: 100vh;
+    background-color: var(--mui-palette-background-paper);
+    display: inline-block;
+}
+
+.sideMenuFlexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 271px;
+    height: 100vh;
+}
+
+.helpContainer {
+    width: 100%;
+    padding: 8px;
+    height: 191px;
+    background-color: var(--mui-palette-background-paper);
+    flex-shrink: 0;
+}
+
+.accordionContainer {
+    padding: 12px;
+    flex: 1;
+    overflow-y: auto;
+    --bs-accordion-border-width: 0px;
+    height: 500px;
+}
+
+.leftbarHr {
+    height: 1px;
+    padding: 0;
+    margin: 0px 0px 0px -10px;
+    /* background-color: #bfc3c7; */
+    border-top: 0;
+    width: 90%;
+    margin-left: 5%;
+    height: 1px;
+    /* background: #ADB1B5; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

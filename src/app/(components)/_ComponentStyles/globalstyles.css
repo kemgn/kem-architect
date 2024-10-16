@@ -1,0 +1,14 @@
+.inputContainer {
+    overflow: auto;
+    padding-top: 12px;
+}
+.inputContainer .MuiFormControl-root {
+    margin-bottom: 12px;
+}
+.inputContainerFirstChild .MuiFormControl-root:first-child {
+    margin-top: 12px;
+}
+
+.noPadding {
+    margin-top: -12px;
+}

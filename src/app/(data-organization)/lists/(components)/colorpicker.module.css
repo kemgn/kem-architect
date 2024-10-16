@@ -1,0 +1,32 @@
+.container{
+    width: 300px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    flex-basis: calc(25% - 30px); 
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer > label {
+    margin-right: 15px;
+}
+
+.colorPickers {
+    display: flex;
+    justify-content: space-around;
+}
+
+.resetBtn{
+    margin-left: 20%;
+}

@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableHeaderContainer {
+    flex: 1;
+}
+
+.headerButtonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createButton {
+    height: 32px;
+}
+

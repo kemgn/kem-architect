@@ -1,0 +1,88 @@
+/*form içerisindeki hr elemanını duvara sağa ve sola yapıştırmak için negatif margin*/
+.hrContainerForForm {
+    margin: 0 -32px 12px -32px;
+}
+
+.hrContainerIndependent {
+    margin-top: 16px;
+}
+
+.hr {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */ 
+    /* height: calc(100vh - 300px); */
+}
+.createButton {
+    height: 32px;
+    z-index: 3;
+}
+.muiModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 420px;
+    background-color: var(--mui-palette-background-paper);
+    box-shadow: var(--elevation-dark-5);
+    padding: 32px;
+}
+
+.headerButtonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ActionsAndButtonsGroup{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+
+.buttonAndPanel {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonOverPanel {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.actionPanelsFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    align-items: center; 
+}
+
+.tableActionCell {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.iconHighlight {
+    border-radius: 4px;
+    width: 40px;
+    height: 25px;
+    margin: 15px;
+    background: var(--body-background);
+}
+
+.iconHighlightCompact {
+    border-radius: 4px;
+    width: 30px;
+    height: 20px;
+    margin: 8px;
+    background: var(--body-background);
+}
