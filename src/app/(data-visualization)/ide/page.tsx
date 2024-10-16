@@ -4,6 +4,15 @@ import Head from 'next/head';
 import { IDEContext, useIde } from '../../../../public/IDE/IDEContext';
 import { Button } from '@ims/component-library';
 import FormulaInput from '@/app/(components)/FormulaInput/FormulaInput';
+export interface CustomWindow extends Window{
+    initIdeFn: ( params: InitIdeParams) => void
+    getIdeCodeFn: () => string;
+}
+interface InitIdeParams {
+    SessionGUID: string;
+    BaseUrl: string;
+}
+declare let window: CustomWindow;
 export default function IDEPage() {
     const ideContext = useContext(IDEContext);
 

@@ -81,7 +81,7 @@ export default function Forms() {
         const fun = async () => {
             const formProps = initialDataContractState?.find(x => x.dataContractId === selectedView?.dataContractReferenceId)?.dataContractProperties;
             const propertyIds = formProps?.map(x => (x as FormProperty).propertyId);
-            const properties = await ModulesService.getAllProperties(moduleId); 
+            const properties = await ModulesService.getAllProperties(moduleId);
             setAvailableFormProperties(properties.data.filter(x => propertyIds?.includes(x.id)));
         }
         fun();
@@ -93,7 +93,7 @@ export default function Forms() {
         }
 
         const fillAvailableProperties = async () => {
-            debugger
+
             const props = (await ModulesService.getAllProperties(moduleId)).data;
             if (properties?.length === 0) {
                 setProperties(props)
@@ -340,6 +340,7 @@ export default function Forms() {
             setSelectedFormProperty(formProp as FormPropertyForUpdate);
         }
     }
+    debugger
     return (
         <>
             <div className="inputContainer noPadding">

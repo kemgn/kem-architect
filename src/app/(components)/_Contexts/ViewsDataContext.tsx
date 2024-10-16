@@ -1,7 +1,7 @@
 "use client";
 
 import { RemoteFilter } from "@/models/Entities/RemoteFilter";
-import { DataContract, DataContractForUpdate, DataContractProperty, DataContractUIPropertiesForUpdate } from "@/models/Entities/DataContract";
+import { DataContract, DataContractForUpdate, DataContractProperty } from "@/models/Entities/DataContract";
 import { DataContractService } from "@/services/DataContract";
 import { createContext, useEffect, useState } from "react";
 import { RemoteSort } from "@/models/Entities/RemoteSort";
@@ -57,7 +57,7 @@ export const DataContractsProvider = ({ children }: Readonly<{ children: React.R
                     const dcForUpdate = dataContractResults.map(x => {
                         initialViewProps.push({
                             dataContractId: x.dataContractReferenceId,
-                            dataContractProperties: x.dataContractUIProperties,
+                            dataContractProperties: x.dataContractUIProperties!,
                         })
                         filters_.push({
                             dataContractId: x.dataContractReferenceId,

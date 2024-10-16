@@ -20,6 +20,7 @@ import "../../public/IDE/plugin3.css";
 import Script from "next/script";
 import IdeModal from "./(components)/IDE/IDE";
 import { IDEProvider } from "../../public/IDE/IDEContext";
+import { useEffect } from "react";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -40,6 +41,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             <head>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
                 <Script id="" type="module">
+                
                     {
                     `
                         import { initIdeFn, getCodeFn } from "/IDE/plugin.js";

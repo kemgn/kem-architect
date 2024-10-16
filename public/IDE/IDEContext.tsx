@@ -3,12 +3,13 @@ import { ReactNode, createContext, useContext, useEffect, useState } from "react
 // import { getCodeFn, initIdeFn, initializeDotnetWasm } from "./plugin"
 import dynamic from "next/dynamic.js";
 import Script from "next/script";
-
+import { CustomWindow } from "@/app/(data-visualization)/ide/page";
+declare let window: CustomWindow;
 interface IDEContextType {
     isOpen: boolean;
     openIde: () => void;
     closeIde: () => void;
-    getCode: () => string;
+    getCode: () => string | undefined;
 }
 
 export const IDEContext = createContext<IDEContextType | null>(null);

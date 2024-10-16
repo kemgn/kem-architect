@@ -18,7 +18,7 @@ const getBoolValueForSubjectProps = (value: number) => {
 
 export async function createModule(formData: FormData, labelFieldsPrefix: string, languages?: Language[]) {
     try {
-        const module: ModuleForCreate = {
+        const ModuleForCreate : ModuleForCreate = {
             systemName: formData.get("systemName") as string,
             isSystem: true,
             keepHistory: (formData.get("keepHistory") as string) === "on" ? true : false,
@@ -34,7 +34,7 @@ export async function createModule(formData: FormData, labelFieldsPrefix: string
                 }
             }) : [],
         }
-        const createdModule: ModuleForCreate = await ModulesService.createModule(module);
+        const createdModule: ModuleForCreate = await ModulesService.createModule(ModuleForCreate );
         return { isSuccess: true, createdModule };
     } catch (error) {
         return { isSuccess: false, null: null };
@@ -231,10 +231,10 @@ export async function createProperty(formData: FormData, propertyFieldsPrefix: s
 
 export async function deleteModule(formData: FormData) {
     try {
-        const module: ModuleForDelete = {
+        const moduleForDelete: ModuleForDelete = {
             id: formData.get("id") as string,
         }
-        const deletedModule: ModuleForDelete = await ModulesService.deleteModule(module);
+        const deletedModule: ModuleForDelete = await ModulesService.deleteModule(moduleForDelete);
         return { isSuccess: true, deletedModule };
     } catch (error) {
         return { isSuccess: false, null: null };
@@ -243,7 +243,7 @@ export async function deleteModule(formData: FormData) {
 
 export async function updateModule(formData: FormData, labelFieldsPrefix: string, languages?: Language[]) {
     try {
-        const module: ModuleForUpdate = {
+        const moduleForUpdate: ModuleForUpdate = {
             id: formData.get("id") as string,
             isSystem: true,
             keepHistory: (formData.get("keepHistory") as string) === "on" ? true : false,
@@ -264,7 +264,7 @@ export async function updateModule(formData: FormData, labelFieldsPrefix: string
             // },
             labels: ArrangeLabelsPack(formData, labelFieldsPrefix, languages),
         }
-        const updatedModule: ModuleForUpdate = await ModulesService.updateModule(module);
+        const updatedModule: ModuleForUpdate = await ModulesService.updateModule(moduleForUpdate);
         return { isSuccess: true, updatedModule };
     } catch (error) {
         return { isSuccess: false, null: null };

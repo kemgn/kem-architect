@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import globalStyles from "@/app/(components)/_ComponentStyles/globalstyles.module.css";
 import { Button, TextInput, Toggle, Select } from '@ims/component-library';
 import styles from './conditional.module.css'
-export default function conditionalFormater() {
+export default function ConditionalFormater() {
     const tableHeader = ["View", "Form", "Module"];
     const row = "CF";
     const [targetOpen, setTargetOpen] = useState(false);

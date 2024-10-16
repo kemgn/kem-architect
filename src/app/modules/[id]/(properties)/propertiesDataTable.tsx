@@ -37,7 +37,7 @@ const initialColuldNotVisible = {
     formula: false,
 }
 
-export default function propertiesDataTable(props: PropertiesDataTableProps) {
+export default function PropertiesDataTable(props: PropertiesDataTableProps) {
 
     const [columnVisibilityModel] = useState(initialColuldNotVisible);
     const [id, setId] = useState('');
