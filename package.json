@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@ims/component-library": "file:./ims-component-library-0.0.206.tgz",
-    "@ims/ide": "^0.0.27",
     "@mui/material-nextjs": "^5.15.11",
     "@mui/x-date-pickers": "^7.9.0",
     "dayjs": "^1.11.13",
